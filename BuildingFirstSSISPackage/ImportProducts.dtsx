@@ -7,15 +7,125 @@
   DTS:CreatorName="TLEBLANC-L\Thomas LeBlanc"
   DTS:DTSID="{A03E14C4-7084-4572-8556-83125B2ABC38}"
   DTS:ExecutableType="Microsoft.Package"
-  DTS:LastModifiedProductVersion="15.0.1301.433"
+  DTS:LastModifiedProductVersion="15.0.2000.121"
   DTS:LocaleID="1033"
   DTS:ObjectName="ImportProducts"
   DTS:PackageType="5"
-  DTS:VersionBuild="2"
-  DTS:VersionGUID="{FE525D42-E90C-4D69-BDAE-511E748EE54C}">
+  DTS:VersionBuild="5"
+  DTS:VersionGUID="{27C6D5A1-A5C3-4466-9341-2ADF107E467A}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{17C2A29F-DFCA-4CFA-A38E-3A16B936FD22}"
+      DTS:ObjectName="Flat File Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="4105"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\14379\Downloads\building-first-ssis-package\02\demos\Products.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ProductID"
+              DTS:DTSID="{5B47DD7E-56E0-40D9-AB3C-A56B2374B56B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ProductName"
+              DTS:DTSID="{906E0AAE-A6EE-4F49-8DD7-502D630BDA2B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SupplierID"
+              DTS:DTSID="{DC265BF1-F04E-4340-B593-D48B6D2FB4BB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CategoryID"
+              DTS:DTSID="{E8EC30D8-BDFC-4CDC-BCB6-A02493AE1901}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="QuantityPerUnit"
+              DTS:DTSID="{7F948C5D-D8CE-44CC-8CD4-C5A91CD52610}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="UnitPrice"
+              DTS:DTSID="{29FC8CB8-5745-4BA3-B668-FDE564E34292}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="UnitsInStock"
+              DTS:DTSID="{20138E36-7A60-492D-9787-907F845C5292}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="UnitsOnOrder"
+              DTS:DTSID="{A4BAC75D-D0A8-4260-A5B5-DEC2C7931CF5}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ReorderLevel"
+              DTS:DTSID="{2CDF6F0C-F267-4E2C-96F5-113DB510DA38}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Discontinued"
+              DTS:DTSID="{8724E1F8-B84C-401D-A415-21AC0CD128C2}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[LocalHost.AdvWrkDW17]"
       DTS:CreationName="OLEDB"
@@ -236,7 +346,7 @@
               componentClassID="Microsoft.FlatFileSource"
               contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
               description="Flat File Source"
-              localeId="1033"
+              localeId="4105"
               name="Flat File Source"
               usesDispositions="true"
               version="1">
@@ -253,8 +363,8 @@
               <connections>
                 <connection
                   refId="Package\Import Products\Flat File Source.Connections[FlatFileConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Products]"
-                  connectionManagerRefId="Package.ConnectionManagers[Products]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
@@ -495,7 +605,7 @@
                       refId="Package\Import Products\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ProductName]"
                       codePage="1252"
                       dataType="str"
-                      length="100"
+                      length="50"
                       name="ProductName" />
                     <externalMetadataColumn
                       refId="Package\Import Products\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[SupplierID]"
@@ -721,10 +831,18 @@
                       externalMetadataColumnId="Package\Import Products\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Discontinued]"
                       lineageId="Package\Import Products\Flat File Source.Outputs[Flat File Source Output].Columns[Discontinued]" />
                     <inputColumn
+                      refId="Package\Import Products\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ProductID]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="ProductID"
+                      externalMetadataColumnId="Package\Import Products\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ProductID]"
+                      lineageId="Package\Import Products\Flat File Source.Outputs[Flat File Source Output].Columns[ProductID]" />
+                    <inputColumn
                       refId="Package\Import Products\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[intProductID]"
                       cachedDataType="i4"
                       cachedName="intProductID"
-                      externalMetadataColumnId="Package\Import Products\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ProductID]"
+                      externalMetadataColumnId="Package\Import Products\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[intProductID]"
                       lineageId="Package\Import Products\Data Conversion.Outputs[Data Conversion Output].Columns[intProductID]" />
                   </inputColumns>
                   <externalMetadataColumns
@@ -867,6 +985,10 @@
           Id="Package\Import Products\Flat File Source"
           TopLeft="116,87" />
         <NodeLayout
+          Size="171,42"
+          Id="Package\Import Products\OLE DB Destination"
+          TopLeft="474,435" />
+        <NodeLayout
           Size="156,42"
           Id="Package\Import Products\Data Conversion"
           TopLeft="298,259" />
@@ -904,10 +1026,6 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="171,42"
-          Id="Package\Import Products\OLE DB Destination"
-          TopLeft="474,435" />
         <EdgeLayout
           Id="Package\Import Products.Paths[Data Conversion Output]"
           TopLeft="376,301">

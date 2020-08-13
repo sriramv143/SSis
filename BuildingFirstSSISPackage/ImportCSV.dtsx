@@ -11,11 +11,121 @@
   DTS:LocaleID="4105"
   DTS:ObjectName="ImportCSV"
   DTS:PackageType="5"
-  DTS:VersionBuild="1"
-  DTS:VersionGUID="{95FC8C88-D969-4BE3-8F0C-7AC6E2018E07}">
+  DTS:VersionBuild="3"
+  DTS:VersionGUID="{1BB1B89F-7FDE-4A83-8B2C-0B888684A3A8}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{D5E8CBE2-13A0-4E09-8370-CC8A97FC4D1B}"
+      DTS:ObjectName="Flat File Connection Manager">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="4105"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="C:\Users\14379\Downloads\building-first-ssis-package\02\demos\Products.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ProductID"
+              DTS:DTSID="{6D34DFDA-D961-44E3-96DE-34AF34C75A53}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ProductName"
+              DTS:DTSID="{9192CD6A-98BE-4A79-A747-885440EFEF9A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="SupplierID"
+              DTS:DTSID="{0FFF11BD-FB1D-4C41-91B6-B3075EF60C70}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CategoryID"
+              DTS:DTSID="{D8B66B70-5E9B-4A9B-9377-285D2BD35EF3}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="QuantityPerUnit"
+              DTS:DTSID="{AB338658-8A89-4206-834D-E12AA99A8B06}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="UnitPrice"
+              DTS:DTSID="{166D9EFB-6569-4737-A3FB-0BF6739F61A4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="UnitsInStock"
+              DTS:DTSID="{95CD828C-EE87-41FC-85AF-DF45D2F81D08}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="UnitsOnOrder"
+              DTS:DTSID="{AC421E2B-A5D4-4808-B73E-B98C66D33546}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="ReorderLevel"
+              DTS:DTSID="{1E7BB13A-E46C-4195-B330-FB486E63525E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Discontinued"
+              DTS:DTSID="{2DDF5959-9B6A-47AD-A6B7-76B8C116A1BA}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[LocalHost.AdvWrk17]"
       DTS:CreationName="OLEDB"
@@ -175,8 +285,8 @@
               <connections>
                 <connection
                   refId="Package\Import Products\Flat File Source.Connections[FlatFileConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Products]"
-                  connectionManagerRefId="Package.ConnectionManagers[Products]"
+                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager]"
+                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager]"
                   name="FlatFileConnection" />
               </connections>
               <outputs>
@@ -780,37 +890,37 @@
         <NodeLayout
           Size="151,42"
           Id="Package\Import Products\Flat File Source"
-          TopLeft="5.5,5.5" />
+          TopLeft="154.5,29.5" />
         <NodeLayout
           Size="171,42"
           Id="Package\Import Products\OLE DB Destination"
-          TopLeft="249,110" />
+          TopLeft="300,159" />
         <EdgeLayout
           Id="Package\Import Products.Paths[Flat File Source Output]"
-          TopLeft="81,47.5">
+          TopLeft="230,71.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="253.5,62.5"
+              EndConnector="155.5,87.5"
               Start="0,0"
-              End="253.5,55">
+              End="155.5,80">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,27.25" />
+                    End="0,39.75" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,27.25"
-                    Point2="0,31.25"
-                    Point3="4,31.25" />
+                    Point1="0,39.75"
+                    Point2="0,43.75"
+                    Point3="4,43.75" />
                   <mssgle:LineSegment
-                    End="249.5,31.25" />
+                    End="151.5,43.75" />
                   <mssgle:CubicBezierSegment
-                    Point1="249.5,31.25"
-                    Point2="253.5,31.25"
-                    Point3="253.5,35.25" />
+                    Point1="151.5,43.75"
+                    Point2="155.5,43.75"
+                    Point3="155.5,47.75" />
                   <mssgle:LineSegment
-                    End="253.5,55" />
+                    End="155.5,80" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>

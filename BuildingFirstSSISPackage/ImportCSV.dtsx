@@ -11,121 +11,11 @@
   DTS:LocaleID="4105"
   DTS:ObjectName="ImportCSV"
   DTS:PackageType="5"
-  DTS:VersionBuild="3"
-  DTS:VersionGUID="{1BB1B89F-7FDE-4A83-8B2C-0B888684A3A8}">
+  DTS:VersionBuild="11"
+  DTS:VersionGUID="{60B09782-3688-4FB9-B0CD-CA11244FC129}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[Flat File Connection Manager]"
-      DTS:CreationName="FLATFILE"
-      DTS:DTSID="{D5E8CBE2-13A0-4E09-8370-CC8A97FC4D1B}"
-      DTS:ObjectName="Flat File Connection Manager">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:Format="Delimited"
-          DTS:LocaleID="4105"
-          DTS:HeaderRowDelimiter="_x000D__x000A_"
-          DTS:ColumnNamesInFirstDataRow="True"
-          DTS:RowDelimiter=""
-          DTS:TextQualifier="_x003C_none_x003E_"
-          DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\14379\Downloads\building-first-ssis-package\02\demos\Products.csv">
-          <DTS:FlatFileColumns>
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="ProductID"
-              DTS:DTSID="{6D34DFDA-D961-44E3-96DE-34AF34C75A53}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="ProductName"
-              DTS:DTSID="{9192CD6A-98BE-4A79-A747-885440EFEF9A}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="SupplierID"
-              DTS:DTSID="{0FFF11BD-FB1D-4C41-91B6-B3075EF60C70}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="CategoryID"
-              DTS:DTSID="{D8B66B70-5E9B-4A9B-9377-285D2BD35EF3}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="QuantityPerUnit"
-              DTS:DTSID="{AB338658-8A89-4206-834D-E12AA99A8B06}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="UnitPrice"
-              DTS:DTSID="{166D9EFB-6569-4737-A3FB-0BF6739F61A4}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="UnitsInStock"
-              DTS:DTSID="{95CD828C-EE87-41FC-85AF-DF45D2F81D08}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="UnitsOnOrder"
-              DTS:DTSID="{AC421E2B-A5D4-4808-B73E-B98C66D33546}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="ReorderLevel"
-              DTS:DTSID="{1E7BB13A-E46C-4195-B330-FB486E63525E}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x000D__x000A_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="129"
-              DTS:TextQualified="True"
-              DTS:ObjectName="Discontinued"
-              DTS:DTSID="{2DDF5959-9B6A-47AD-A6B7-76B8C116A1BA}"
-              DTS:CreationName="" />
-          </DTS:FlatFileColumns>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
     <DTS:ConnectionManager
       DTS:refId="Package.ConnectionManagers[LocalHost.AdvWrk17]"
       DTS:CreationName="OLEDB"
@@ -141,6 +31,8 @@
       DTS:CreationName="FLATFILE"
       DTS:DTSID="{D94B91DC-9733-42F7-8BD3-48AEA33FF276}"
       DTS:ObjectName="Products">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[User::FileNamePath]</DTS:PropertyExpression>
       <DTS:ObjectData>
         <DTS:ConnectionManager
           DTS:Format="Delimited"
@@ -150,7 +42,7 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="C:\Users\14379\Downloads\building-first-ssis-package\02\demos\Products.csv">
+          DTS:ConnectionString="C:\Users\14379\Downloads\building-first-ssis-package\07\demos\Files\Products">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -247,622 +139,725 @@
       </DTS:ObjectData>
     </DTS:ConnectionManager>
   </DTS:ConnectionManagers>
-  <DTS:Variables />
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{D539056E-FE7E-42B5-BCB5-CDF2F0952647}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="FileNamePath">
+      <DTS:VariableValue
+        DTS:DataType="8">C:\Users\14379\Downloads\building-first-ssis-package\07\demos\Files\Products</DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
   <DTS:Executables>
     <DTS:Executable
-      DTS:refId="Package\Import Products"
-      DTS:CreationName="Microsoft.Pipeline"
-      DTS:Description="Data Flow Task"
-      DTS:DTSID="{FDB67C95-802E-4622-A157-8BE591F6D28C}"
-      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:refId="Package\Execute SQL Task"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{823236DB-529E-4B47-90D9-A89154C6E712}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
       DTS:LocaleID="-1"
-      DTS:ObjectName="Import Products"
-      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      DTS:ObjectName="Execute SQL Task"
+      DTS:ThreadHint="0">
       <DTS:Variables />
       <DTS:ObjectData>
-        <pipeline
-          version="1">
-          <components>
-            <component
-              refId="Package\Import Products\Flat File Source"
-              componentClassID="Microsoft.FlatFileSource"
-              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
-              description="Flat File Source"
-              localeId="4105"
-              name="Flat File Source"
-              usesDispositions="true"
-              version="1">
-              <properties>
-                <property
-                  dataType="System.Boolean"
-                  description="Specifies whether zero-length columns are treated as null."
-                  name="RetainNulls">false</property>
-                <property
-                  dataType="System.String"
-                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
-                  name="FileNameColumnName"></property>
-              </properties>
-              <connections>
-                <connection
-                  refId="Package\Import Products\Flat File Source.Connections[FlatFileConnection]"
-                  connectionManagerID="Package.ConnectionManagers[Flat File Connection Manager]"
-                  connectionManagerRefId="Package.ConnectionManagers[Flat File Connection Manager]"
-                  name="FlatFileConnection" />
-              </connections>
-              <outputs>
-                <output
-                  refId="Package\Import Products\Flat File Source.Outputs[Flat File Source Output]"
-                  name="Flat File Source Output">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Import Products\Flat File Source.Outputs[Flat File Source Output].Columns[ProductID]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Import Products\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ProductID]"
-                      length="50"
-                      lineageId="Package\Import Products\Flat File Source.Outputs[Flat File Source Output].Columns[ProductID]"
-                      name="ProductID"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Import Products\Flat File Source.Outputs[Flat File Source Output].Columns[ProductName]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Import Products\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ProductName]"
-                      length="50"
-                      lineageId="Package\Import Products\Flat File Source.Outputs[Flat File Source Output].Columns[ProductName]"
-                      name="ProductName"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Import Products\Flat File Source.Outputs[Flat File Source Output].Columns[SupplierID]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Import Products\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[SupplierID]"
-                      length="50"
-                      lineageId="Package\Import Products\Flat File Source.Outputs[Flat File Source Output].Columns[SupplierID]"
-                      name="SupplierID"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Import Products\Flat File Source.Outputs[Flat File Source Output].Columns[CategoryID]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Import Products\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CategoryID]"
-                      length="50"
-                      lineageId="Package\Import Products\Flat File Source.Outputs[Flat File Source Output].Columns[CategoryID]"
-                      name="CategoryID"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Import Products\Flat File Source.Outputs[Flat File Source Output].Columns[QuantityPerUnit]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Import Products\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[QuantityPerUnit]"
-                      length="50"
-                      lineageId="Package\Import Products\Flat File Source.Outputs[Flat File Source Output].Columns[QuantityPerUnit]"
-                      name="QuantityPerUnit"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Import Products\Flat File Source.Outputs[Flat File Source Output].Columns[UnitPrice]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Import Products\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[UnitPrice]"
-                      length="50"
-                      lineageId="Package\Import Products\Flat File Source.Outputs[Flat File Source Output].Columns[UnitPrice]"
-                      name="UnitPrice"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Import Products\Flat File Source.Outputs[Flat File Source Output].Columns[UnitsInStock]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Import Products\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[UnitsInStock]"
-                      length="50"
-                      lineageId="Package\Import Products\Flat File Source.Outputs[Flat File Source Output].Columns[UnitsInStock]"
-                      name="UnitsInStock"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Import Products\Flat File Source.Outputs[Flat File Source Output].Columns[UnitsOnOrder]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Import Products\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[UnitsOnOrder]"
-                      length="50"
-                      lineageId="Package\Import Products\Flat File Source.Outputs[Flat File Source Output].Columns[UnitsOnOrder]"
-                      name="UnitsOnOrder"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Import Products\Flat File Source.Outputs[Flat File Source Output].Columns[ReorderLevel]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Import Products\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ReorderLevel]"
-                      length="50"
-                      lineageId="Package\Import Products\Flat File Source.Outputs[Flat File Source Output].Columns[ReorderLevel]"
-                      name="ReorderLevel"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Import Products\Flat File Source.Outputs[Flat File Source Output].Columns[Discontinued]"
-                      codePage="1252"
-                      dataType="str"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Import Products\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Discontinued]"
-                      length="50"
-                      lineageId="Package\Import Products\Flat File Source.Outputs[Flat File Source Output].Columns[Discontinued]"
-                      name="Discontinued"
-                      truncationRowDisposition="FailComponent">
-                      <properties>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
-                          name="FastParse">false</property>
-                        <property
-                          dataType="System.Boolean"
-                          description="Indicates whether the data is in binary format."
-                          name="UseBinaryFormat">false</property>
-                      </properties>
-                    </outputColumn>
-                  </outputColumns>
-                  <externalMetadataColumns
-                    isUsed="True">
-                    <externalMetadataColumn
-                      refId="Package\Import Products\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ProductID]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="ProductID" />
-                    <externalMetadataColumn
-                      refId="Package\Import Products\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ProductName]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="ProductName" />
-                    <externalMetadataColumn
-                      refId="Package\Import Products\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[SupplierID]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="SupplierID" />
-                    <externalMetadataColumn
-                      refId="Package\Import Products\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CategoryID]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="CategoryID" />
-                    <externalMetadataColumn
-                      refId="Package\Import Products\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[QuantityPerUnit]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="QuantityPerUnit" />
-                    <externalMetadataColumn
-                      refId="Package\Import Products\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[UnitPrice]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="UnitPrice" />
-                    <externalMetadataColumn
-                      refId="Package\Import Products\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[UnitsInStock]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="UnitsInStock" />
-                    <externalMetadataColumn
-                      refId="Package\Import Products\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[UnitsOnOrder]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="UnitsOnOrder" />
-                    <externalMetadataColumn
-                      refId="Package\Import Products\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ReorderLevel]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="ReorderLevel" />
-                    <externalMetadataColumn
-                      refId="Package\Import Products\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Discontinued]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="Discontinued" />
-                  </externalMetadataColumns>
-                </output>
-                <output
-                  refId="Package\Import Products\Flat File Source.Outputs[Flat File Source Error Output]"
-                  isErrorOut="true"
-                  name="Flat File Source Error Output">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Import Products\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
-                      codePage="1252"
-                      dataType="text"
-                      description="Flat File Source Error Output Column"
-                      lineageId="Package\Import Products\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
-                      name="Flat File Source Error Output Column" />
-                    <outputColumn
-                      refId="Package\Import Products\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
-                      dataType="i4"
-                      lineageId="Package\Import Products\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
-                      name="ErrorCode"
-                      specialFlags="1" />
-                    <outputColumn
-                      refId="Package\Import Products\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
-                      dataType="i4"
-                      lineageId="Package\Import Products\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
-                      name="ErrorColumn"
-                      specialFlags="2" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
-            <component
-              refId="Package\Import Products\OLE DB Destination"
-              componentClassID="Microsoft.OLEDBDestination"
-              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
-              description="OLE DB Destination"
-              name="OLE DB Destination"
-              usesDispositions="true"
-              version="4">
-              <properties>
-                <property
-                  dataType="System.Int32"
-                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
-                  name="CommandTimeout">0</property>
-                <property
-                  dataType="System.String"
-                  description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[dbo].[CSVProduct]</property>
-                <property
-                  dataType="System.String"
-                  description="Specifies the variable that contains the name of the database object used to open a rowset."
-                  name="OpenRowsetVariable"></property>
-                <property
-                  dataType="System.String"
-                  description="The SQL command to be executed."
-                  name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the column code page to use when code page information is unavailable from the data source."
-                  name="DefaultCodePage">1252</property>
-                <property
-                  dataType="System.Boolean"
-                  description="Forces the use of the DefaultCodePage property value when describing character data."
-                  name="AlwaysUseDefaultCodePage">false</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the mode used to access the database."
-                  name="AccessMode"
-                  typeConverter="AccessMode">3</property>
-                <property
-                  dataType="System.Boolean"
-                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
-                  name="FastLoadKeepIdentity">false</property>
-                <property
-                  dataType="System.Boolean"
-                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
-                  name="FastLoadKeepNulls">false</property>
-                <property
-                  dataType="System.String"
-                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
-                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
-                  name="FastLoadMaxInsertCommitSize">2147483647</property>
-              </properties>
-              <connections>
-                <connection
-                  refId="Package\Import Products\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[LocalHost.AdvWrk17]"
-                  connectionManagerRefId="Package.ConnectionManagers[LocalHost.AdvWrk17]"
-                  description="The OLE DB runtime connection used to access the database."
-                  name="OleDbConnection" />
-              </connections>
-              <inputs>
-                <input
-                  refId="Package\Import Products\OLE DB Destination.Inputs[OLE DB Destination Input]"
-                  errorOrTruncationOperation="Insert"
-                  errorRowDisposition="FailComponent"
-                  hasSideEffects="true"
-                  name="OLE DB Destination Input">
-                  <inputColumns>
-                    <inputColumn
-                      refId="Package\Import Products\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ProductID]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="ProductID"
-                      externalMetadataColumnId="Package\Import Products\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ProductID]"
-                      lineageId="Package\Import Products\Flat File Source.Outputs[Flat File Source Output].Columns[ProductID]" />
-                    <inputColumn
-                      refId="Package\Import Products\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ProductName]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="ProductName"
-                      externalMetadataColumnId="Package\Import Products\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ProductName]"
-                      lineageId="Package\Import Products\Flat File Source.Outputs[Flat File Source Output].Columns[ProductName]" />
-                    <inputColumn
-                      refId="Package\Import Products\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[SupplierID]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="SupplierID"
-                      externalMetadataColumnId="Package\Import Products\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SupplierID]"
-                      lineageId="Package\Import Products\Flat File Source.Outputs[Flat File Source Output].Columns[SupplierID]" />
-                    <inputColumn
-                      refId="Package\Import Products\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CategoryID]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="CategoryID"
-                      externalMetadataColumnId="Package\Import Products\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CategoryID]"
-                      lineageId="Package\Import Products\Flat File Source.Outputs[Flat File Source Output].Columns[CategoryID]" />
-                    <inputColumn
-                      refId="Package\Import Products\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[QuantityPerUnit]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="QuantityPerUnit"
-                      externalMetadataColumnId="Package\Import Products\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[QuantityPerUnit]"
-                      lineageId="Package\Import Products\Flat File Source.Outputs[Flat File Source Output].Columns[QuantityPerUnit]" />
-                    <inputColumn
-                      refId="Package\Import Products\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[UnitPrice]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="UnitPrice"
-                      externalMetadataColumnId="Package\Import Products\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UnitPrice]"
-                      lineageId="Package\Import Products\Flat File Source.Outputs[Flat File Source Output].Columns[UnitPrice]" />
-                    <inputColumn
-                      refId="Package\Import Products\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[UnitsInStock]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="UnitsInStock"
-                      externalMetadataColumnId="Package\Import Products\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UnitsInStock]"
-                      lineageId="Package\Import Products\Flat File Source.Outputs[Flat File Source Output].Columns[UnitsInStock]" />
-                    <inputColumn
-                      refId="Package\Import Products\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[UnitsOnOrder]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="UnitsOnOrder"
-                      externalMetadataColumnId="Package\Import Products\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UnitsOnOrder]"
-                      lineageId="Package\Import Products\Flat File Source.Outputs[Flat File Source Output].Columns[UnitsOnOrder]" />
-                    <inputColumn
-                      refId="Package\Import Products\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ReorderLevel]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="ReorderLevel"
-                      externalMetadataColumnId="Package\Import Products\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ReorderLevel]"
-                      lineageId="Package\Import Products\Flat File Source.Outputs[Flat File Source Output].Columns[ReorderLevel]" />
-                    <inputColumn
-                      refId="Package\Import Products\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Discontinued]"
-                      cachedCodepage="1252"
-                      cachedDataType="str"
-                      cachedLength="50"
-                      cachedName="Discontinued"
-                      externalMetadataColumnId="Package\Import Products\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Discontinued]"
-                      lineageId="Package\Import Products\Flat File Source.Outputs[Flat File Source Output].Columns[Discontinued]" />
-                  </inputColumns>
-                  <externalMetadataColumns
-                    isUsed="True">
-                    <externalMetadataColumn
-                      refId="Package\Import Products\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ProductID]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="ProductID" />
-                    <externalMetadataColumn
-                      refId="Package\Import Products\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ProductName]"
-                      codePage="1252"
-                      dataType="str"
-                      length="100"
-                      name="ProductName" />
-                    <externalMetadataColumn
-                      refId="Package\Import Products\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SupplierID]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="SupplierID" />
-                    <externalMetadataColumn
-                      refId="Package\Import Products\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CategoryID]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="CategoryID" />
-                    <externalMetadataColumn
-                      refId="Package\Import Products\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[QuantityPerUnit]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="QuantityPerUnit" />
-                    <externalMetadataColumn
-                      refId="Package\Import Products\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UnitPrice]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="UnitPrice" />
-                    <externalMetadataColumn
-                      refId="Package\Import Products\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UnitsInStock]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="UnitsInStock" />
-                    <externalMetadataColumn
-                      refId="Package\Import Products\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UnitsOnOrder]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="UnitsOnOrder" />
-                    <externalMetadataColumn
-                      refId="Package\Import Products\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ReorderLevel]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="ReorderLevel" />
-                    <externalMetadataColumn
-                      refId="Package\Import Products\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Discontinued]"
-                      codePage="1252"
-                      dataType="str"
-                      length="50"
-                      name="Discontinued" />
-                  </externalMetadataColumns>
-                </input>
-              </inputs>
-              <outputs>
-                <output
-                  refId="Package\Import Products\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
-                  exclusionGroup="1"
-                  isErrorOut="true"
-                  name="OLE DB Destination Error Output"
-                  synchronousInputId="Package\Import Products\OLE DB Destination.Inputs[OLE DB Destination Input]">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Import Products\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
-                      dataType="i4"
-                      lineageId="Package\Import Products\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
-                      name="ErrorCode"
-                      specialFlags="1" />
-                    <outputColumn
-                      refId="Package\Import Products\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
-                      dataType="i4"
-                      lineageId="Package\Import Products\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
-                      name="ErrorColumn"
-                      specialFlags="2" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
-          </components>
-          <paths>
-            <path
-              refId="Package\Import Products.Paths[Flat File Source Output]"
-              endId="Package\Import Products\OLE DB Destination.Inputs[OLE DB Destination Input]"
-              name="Flat File Source Output"
-              startId="Package\Import Products\Flat File Source.Outputs[Flat File Source Output]" />
-          </paths>
-        </pipeline>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{526EF612-B2CB-48E3-AA28-713E528B4156}"
+          SQLTask:SqlStatementSource="TRUNCATE table dbo.CSVProduct" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Loop Through Files"
+      DTS:CreationName="STOCK:FOREACHLOOP"
+      DTS:Description="Foreach Loop Container"
+      DTS:DTSID="{0A631299-738D-48C1-BED1-461870FE4056}"
+      DTS:ExecutableType="STOCK:FOREACHLOOP"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Loop Through Files">
+      <DTS:ForEachEnumerator
+        DTS:CreationName="Microsoft.ForEachFileEnumerator"
+        DTS:DTSID="{40230279-5BA6-4B74-91CA-FDAF0219B6B8}"
+        DTS:ObjectName="{40230279-5BA6-4B74-91CA-FDAF0219B6B8}">
+        <DTS:ObjectData>
+          <ForEachFileEnumeratorProperties>
+            <FEFEProperty
+              Folder="C:\Users\14379\Downloads\building-first-ssis-package\07\demos\Files" />
+            <FEFEProperty
+              FileSpec="*.*" />
+            <FEFEProperty
+              FileNameRetrievalType="0" />
+            <FEFEProperty
+              Recurse="0" />
+          </ForEachFileEnumeratorProperties>
+        </DTS:ObjectData>
+      </DTS:ForEachEnumerator>
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Loop Through Files\Import Products"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{6584a716-cc6c-41b1-9fa7-14fa27ef2f6d}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Import Products"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\Loop Through Files\Import Products\Flat File Source"
+                  componentClassID="Microsoft.FlatFileSource"
+                  contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+                  description="Flat File Source"
+                  localeId="4105"
+                  name="Flat File Source"
+                  usesDispositions="true"
+                  version="1">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      description="Specifies whether zero-length columns are treated as null."
+                      name="RetainNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                      name="FileNameColumnName"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Loop Through Files\Import Products\Flat File Source.Connections[FlatFileConnection]"
+                      connectionManagerID="Package.ConnectionManagers[Products]"
+                      connectionManagerRefId="Package.ConnectionManagers[Products]"
+                      name="FlatFileConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\Loop Through Files\Import Products\Flat File Source.Outputs[Flat File Source Output]"
+                      name="Flat File Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Loop Through Files\Import Products\Flat File Source.Outputs[Flat File Source Output].Columns[ProductID]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Loop Through Files\Import Products\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ProductID]"
+                          length="50"
+                          lineageId="Package\Loop Through Files\Import Products\Flat File Source.Outputs[Flat File Source Output].Columns[ProductID]"
+                          name="ProductID"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Loop Through Files\Import Products\Flat File Source.Outputs[Flat File Source Output].Columns[ProductName]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Loop Through Files\Import Products\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ProductName]"
+                          length="50"
+                          lineageId="Package\Loop Through Files\Import Products\Flat File Source.Outputs[Flat File Source Output].Columns[ProductName]"
+                          name="ProductName"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Loop Through Files\Import Products\Flat File Source.Outputs[Flat File Source Output].Columns[SupplierID]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Loop Through Files\Import Products\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[SupplierID]"
+                          length="50"
+                          lineageId="Package\Loop Through Files\Import Products\Flat File Source.Outputs[Flat File Source Output].Columns[SupplierID]"
+                          name="SupplierID"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Loop Through Files\Import Products\Flat File Source.Outputs[Flat File Source Output].Columns[CategoryID]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Loop Through Files\Import Products\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CategoryID]"
+                          length="50"
+                          lineageId="Package\Loop Through Files\Import Products\Flat File Source.Outputs[Flat File Source Output].Columns[CategoryID]"
+                          name="CategoryID"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Loop Through Files\Import Products\Flat File Source.Outputs[Flat File Source Output].Columns[QuantityPerUnit]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Loop Through Files\Import Products\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[QuantityPerUnit]"
+                          length="50"
+                          lineageId="Package\Loop Through Files\Import Products\Flat File Source.Outputs[Flat File Source Output].Columns[QuantityPerUnit]"
+                          name="QuantityPerUnit"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Loop Through Files\Import Products\Flat File Source.Outputs[Flat File Source Output].Columns[UnitPrice]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Loop Through Files\Import Products\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[UnitPrice]"
+                          length="50"
+                          lineageId="Package\Loop Through Files\Import Products\Flat File Source.Outputs[Flat File Source Output].Columns[UnitPrice]"
+                          name="UnitPrice"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Loop Through Files\Import Products\Flat File Source.Outputs[Flat File Source Output].Columns[UnitsInStock]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Loop Through Files\Import Products\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[UnitsInStock]"
+                          length="50"
+                          lineageId="Package\Loop Through Files\Import Products\Flat File Source.Outputs[Flat File Source Output].Columns[UnitsInStock]"
+                          name="UnitsInStock"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Loop Through Files\Import Products\Flat File Source.Outputs[Flat File Source Output].Columns[UnitsOnOrder]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Loop Through Files\Import Products\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[UnitsOnOrder]"
+                          length="50"
+                          lineageId="Package\Loop Through Files\Import Products\Flat File Source.Outputs[Flat File Source Output].Columns[UnitsOnOrder]"
+                          name="UnitsOnOrder"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Loop Through Files\Import Products\Flat File Source.Outputs[Flat File Source Output].Columns[ReorderLevel]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Loop Through Files\Import Products\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ReorderLevel]"
+                          length="50"
+                          lineageId="Package\Loop Through Files\Import Products\Flat File Source.Outputs[Flat File Source Output].Columns[ReorderLevel]"
+                          name="ReorderLevel"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Loop Through Files\Import Products\Flat File Source.Outputs[Flat File Source Output].Columns[Discontinued]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Loop Through Files\Import Products\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Discontinued]"
+                          length="50"
+                          lineageId="Package\Loop Through Files\Import Products\Flat File Source.Outputs[Flat File Source Output].Columns[Discontinued]"
+                          name="Discontinued"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Loop Through Files\Import Products\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ProductID]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="ProductID" />
+                        <externalMetadataColumn
+                          refId="Package\Loop Through Files\Import Products\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ProductName]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="ProductName" />
+                        <externalMetadataColumn
+                          refId="Package\Loop Through Files\Import Products\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[SupplierID]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="SupplierID" />
+                        <externalMetadataColumn
+                          refId="Package\Loop Through Files\Import Products\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[CategoryID]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="CategoryID" />
+                        <externalMetadataColumn
+                          refId="Package\Loop Through Files\Import Products\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[QuantityPerUnit]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="QuantityPerUnit" />
+                        <externalMetadataColumn
+                          refId="Package\Loop Through Files\Import Products\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[UnitPrice]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="UnitPrice" />
+                        <externalMetadataColumn
+                          refId="Package\Loop Through Files\Import Products\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[UnitsInStock]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="UnitsInStock" />
+                        <externalMetadataColumn
+                          refId="Package\Loop Through Files\Import Products\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[UnitsOnOrder]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="UnitsOnOrder" />
+                        <externalMetadataColumn
+                          refId="Package\Loop Through Files\Import Products\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[ReorderLevel]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="ReorderLevel" />
+                        <externalMetadataColumn
+                          refId="Package\Loop Through Files\Import Products\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Discontinued]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Discontinued" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\Loop Through Files\Import Products\Flat File Source.Outputs[Flat File Source Error Output]"
+                      isErrorOut="true"
+                      name="Flat File Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Loop Through Files\Import Products\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                          codePage="1252"
+                          dataType="text"
+                          description="Flat File Source Error Output Column"
+                          lineageId="Package\Loop Through Files\Import Products\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                          name="Flat File Source Error Output Column" />
+                        <outputColumn
+                          refId="Package\Loop Through Files\Import Products\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Loop Through Files\Import Products\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Loop Through Files\Import Products\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Loop Through Files\Import Products\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Loop Through Files\Import Products\OLE DB Destination"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="OLE DB Destination"
+                  name="OLE DB Destination"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[dbo].[CSVProduct]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor, Microsoft.DataTransformationServices.Controls, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">3</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Loop Through Files\Import Products\OLE DB Destination.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[LocalHost.AdvWrk17]"
+                      connectionManagerRefId="Package.ConnectionManagers[LocalHost.AdvWrk17]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Loop Through Files\Import Products\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="OLE DB Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Loop Through Files\Import Products\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ProductID]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="ProductID"
+                          externalMetadataColumnId="Package\Loop Through Files\Import Products\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ProductID]"
+                          lineageId="Package\Loop Through Files\Import Products\Flat File Source.Outputs[Flat File Source Output].Columns[ProductID]" />
+                        <inputColumn
+                          refId="Package\Loop Through Files\Import Products\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ProductName]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="ProductName"
+                          externalMetadataColumnId="Package\Loop Through Files\Import Products\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ProductName]"
+                          lineageId="Package\Loop Through Files\Import Products\Flat File Source.Outputs[Flat File Source Output].Columns[ProductName]" />
+                        <inputColumn
+                          refId="Package\Loop Through Files\Import Products\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[SupplierID]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="SupplierID"
+                          externalMetadataColumnId="Package\Loop Through Files\Import Products\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SupplierID]"
+                          lineageId="Package\Loop Through Files\Import Products\Flat File Source.Outputs[Flat File Source Output].Columns[SupplierID]" />
+                        <inputColumn
+                          refId="Package\Loop Through Files\Import Products\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[CategoryID]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="CategoryID"
+                          externalMetadataColumnId="Package\Loop Through Files\Import Products\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CategoryID]"
+                          lineageId="Package\Loop Through Files\Import Products\Flat File Source.Outputs[Flat File Source Output].Columns[CategoryID]" />
+                        <inputColumn
+                          refId="Package\Loop Through Files\Import Products\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[QuantityPerUnit]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="QuantityPerUnit"
+                          externalMetadataColumnId="Package\Loop Through Files\Import Products\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[QuantityPerUnit]"
+                          lineageId="Package\Loop Through Files\Import Products\Flat File Source.Outputs[Flat File Source Output].Columns[QuantityPerUnit]" />
+                        <inputColumn
+                          refId="Package\Loop Through Files\Import Products\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[UnitPrice]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="UnitPrice"
+                          externalMetadataColumnId="Package\Loop Through Files\Import Products\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UnitPrice]"
+                          lineageId="Package\Loop Through Files\Import Products\Flat File Source.Outputs[Flat File Source Output].Columns[UnitPrice]" />
+                        <inputColumn
+                          refId="Package\Loop Through Files\Import Products\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[UnitsInStock]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="UnitsInStock"
+                          externalMetadataColumnId="Package\Loop Through Files\Import Products\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UnitsInStock]"
+                          lineageId="Package\Loop Through Files\Import Products\Flat File Source.Outputs[Flat File Source Output].Columns[UnitsInStock]" />
+                        <inputColumn
+                          refId="Package\Loop Through Files\Import Products\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[UnitsOnOrder]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="UnitsOnOrder"
+                          externalMetadataColumnId="Package\Loop Through Files\Import Products\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UnitsOnOrder]"
+                          lineageId="Package\Loop Through Files\Import Products\Flat File Source.Outputs[Flat File Source Output].Columns[UnitsOnOrder]" />
+                        <inputColumn
+                          refId="Package\Loop Through Files\Import Products\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[ReorderLevel]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="ReorderLevel"
+                          externalMetadataColumnId="Package\Loop Through Files\Import Products\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ReorderLevel]"
+                          lineageId="Package\Loop Through Files\Import Products\Flat File Source.Outputs[Flat File Source Output].Columns[ReorderLevel]" />
+                        <inputColumn
+                          refId="Package\Loop Through Files\Import Products\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Discontinued]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Discontinued"
+                          externalMetadataColumnId="Package\Loop Through Files\Import Products\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Discontinued]"
+                          lineageId="Package\Loop Through Files\Import Products\Flat File Source.Outputs[Flat File Source Output].Columns[Discontinued]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Loop Through Files\Import Products\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ProductID]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="ProductID" />
+                        <externalMetadataColumn
+                          refId="Package\Loop Through Files\Import Products\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ProductName]"
+                          codePage="1252"
+                          dataType="str"
+                          length="100"
+                          name="ProductName" />
+                        <externalMetadataColumn
+                          refId="Package\Loop Through Files\Import Products\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SupplierID]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="SupplierID" />
+                        <externalMetadataColumn
+                          refId="Package\Loop Through Files\Import Products\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[CategoryID]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="CategoryID" />
+                        <externalMetadataColumn
+                          refId="Package\Loop Through Files\Import Products\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[QuantityPerUnit]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="QuantityPerUnit" />
+                        <externalMetadataColumn
+                          refId="Package\Loop Through Files\Import Products\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UnitPrice]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="UnitPrice" />
+                        <externalMetadataColumn
+                          refId="Package\Loop Through Files\Import Products\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UnitsInStock]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="UnitsInStock" />
+                        <externalMetadataColumn
+                          refId="Package\Loop Through Files\Import Products\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[UnitsOnOrder]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="UnitsOnOrder" />
+                        <externalMetadataColumn
+                          refId="Package\Loop Through Files\Import Products\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[ReorderLevel]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="ReorderLevel" />
+                        <externalMetadataColumn
+                          refId="Package\Loop Through Files\Import Products\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Discontinued]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Discontinued" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Loop Through Files\Import Products\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Destination Error Output"
+                      synchronousInputId="Package\Loop Through Files\Import Products\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Loop Through Files\Import Products\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Loop Through Files\Import Products\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Loop Through Files\Import Products\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Loop Through Files\Import Products\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\Loop Through Files\Import Products.Paths[Flat File Source Output]"
+                  endId="Package\Loop Through Files\Import Products\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  name="Flat File Source Output"
+                  startId="Package\Loop Through Files\Import Products\Flat File Source.Outputs[Flat File Source Output]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\Loop Through Files\Moving CSV Files"
+          DTS:CreationName="Microsoft.FileSystemTask"
+          DTS:Description="File System Task"
+          DTS:DTSID="{A9B115E7-13A0-44D6-940B-68D337429744}"
+          DTS:ExecutableType="Microsoft.FileSystemTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Moving CSV Files"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <FileSystemData
+              TaskOperationType="MoveFile"
+              TaskOverwriteDestFile="True"
+              TaskSourcePath="User::FileNamePath"
+              TaskIsSourceVariable="True"
+              TaskDestinationPath="$Project::ProcessedFiles"
+              TaskIsDestinationVariable="True" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+      <DTS:PrecedenceConstraints>
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\Loop Through Files.PrecedenceConstraints[Constraint]"
+          DTS:CreationName=""
+          DTS:DTSID="{33AE6B5E-6499-413F-A5DA-02B17B4F2F39}"
+          DTS:From="Package\Loop Through Files\Import Products"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint"
+          DTS:To="Package\Loop Through Files\Moving CSV Files" />
+      </DTS:PrecedenceConstraints>
+      <DTS:ForEachVariableMappings>
+        <DTS:ForEachVariableMapping
+          DTS:CreationName=""
+          DTS:DTSID="{63E3C004-DD96-4AC1-90D0-64F1BA426DF5}"
+          DTS:ObjectName="{63E3C004-DD96-4AC1-90D0-64F1BA426DF5}"
+          DTS:ValueIndex="0"
+          DTS:VariableName="User::FileNamePath" />
+      </DTS:ForEachVariableMappings>
+    </DTS:Executable>
   </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{9A292C49-4496-4500-915B-C9A929372CD8}"
+      DTS:From="Package\Execute SQL Task"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Loop Through Files" />
+  </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
 <!--If you manually edit this section and make a mistake, you can delete it. -->
@@ -874,29 +869,112 @@
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
           Size="155,42"
-          Id="Package\Import Products"
-          TopLeft="118,71" />
+          Id="Package\Loop Through Files\Import Products"
+          TopLeft="84,21" />
+        <NodeLayout
+          Size="158,42"
+          Id="Package\Loop Through Files\Moving CSV Files"
+          TopLeft="50,106" />
+        <EdgeLayout
+          Id="Package\Loop Through Files.PrecedenceConstraints[Constraint]"
+          TopLeft="161.5,63">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-32.5,43"
+              Start="0,0"
+              End="-32.5,35.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,17.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,17.5"
+                    Point2="0,21.5"
+                    Point3="-4,21.5" />
+                  <mssgle:LineSegment
+                    End="-28.5,21.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-28.5,21.5"
+                    Point2="-32.5,21.5"
+                    Point3="-32.5,25.5" />
+                  <mssgle:LineSegment
+                    End="-32.5,35.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="244,203"
+          Size="244,246"
+          Id="Package\Loop Through Files"
+          TopLeft="203,107" />
+        <NodeLayout
+          Size="163,42"
+          Id="Package\Execute SQL Task"
+          TopLeft="58,23" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="139.5,65">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="185.5,42"
+              Start="0,0"
+              End="185.5,34.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,17" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,17"
+                    Point2="0,21"
+                    Point3="4,21" />
+                  <mssgle:LineSegment
+                    End="181.5,21" />
+                  <mssgle:CubicBezierSegment
+                    Point1="181.5,21"
+                    Point2="185.5,21"
+                    Point3="185.5,25" />
+                  <mssgle:LineSegment
+                    End="185.5,34.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </Package>
   <TaskHost
-    design-time-name="Package\Import Products">
+    design-time-name="Package\Loop Through Files\Import Products">
     <LayoutInfo>
       <GraphLayout
-        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
           Size="151,42"
-          Id="Package\Import Products\Flat File Source"
+          Id="Package\Loop Through Files\Import Products\Flat File Source"
           TopLeft="154.5,29.5" />
         <NodeLayout
           Size="171,42"
-          Id="Package\Import Products\OLE DB Destination"
+          Id="Package\Loop Through Files\Import Products\OLE DB Destination"
           TopLeft="300,159" />
         <EdgeLayout
-          Id="Package\Import Products.Paths[Flat File Source Output]"
+          Id="Package\Loop Through Files\Import Products.Paths[Flat File Source Output]"
           TopLeft="230,71.5">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -926,24 +1004,13 @@
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="62.3598828125,48.75,30.780234375,9.5732421875"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Import Products\OLE DB Destination">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
 </Objects>]]></DTS:DesignTimeProperties>
 </DTS:Executable>
